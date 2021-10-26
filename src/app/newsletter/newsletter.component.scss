@@ -1,0 +1,81 @@
+@import '../../styles.scss';
+
+.section-newsletter{
+    height: 40vh;
+    background-color: $bg-black00;
+    background-image: url('../../assets/svg/arrow-back.svg');
+    background-position-x: 36%;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+}
+
+.hl{
+    border-top: 2px solid $bg-huevo;
+    width: 70%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sp{
+    font-size: 35px;
+    font-weight: 700;
+    color: $bg-huevo;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.45);
+
+}
+
+.txt-newsletter{
+    font-size: 35px;
+    line-height: 37px;
+    font-weight: 700;
+    color: #FFF;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.45);
+}
+
+.input-container{
+    background-color: $bg-black02;
+    width: 480px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.45);
+    position: absolute;
+    top: 220px;
+    right: 100px;
+}
+
+input{
+    background-color: transparent;
+    border: transparent;
+
+}
+
+::-webkit-input-placeholder { color:$bg-grey00 }
+
+
+.input-btn{
+    background-color: $bg-grey00;
+    width: 53px;
+    height: 45px;
+    border-radius: 44px;
+}
+
+button{
+    border: none;
+}
+
+.input-btn :hover{
+    background-color: $bg-huevo;
+    width: 53px;
+    height: 45px;
+    border-radius: 44px;
+
+}
+
+.suscribe{
+    font-family: cherysh;
+    position: absolute;
+    color: $bg-huevo;
+    font-size: 195px;
+    top: 30px;
+    right: 200px;
+}

@@ -1,0 +1,42 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark bg-black00" [containerInside]="false">
+
+    <mdb-navbar-brand><a class="navbar-brand" href="#"><b>LOGO</b></a></mdb-navbar-brand>
+
+
+    <links>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item" [routerLinkActive]="['active']">
+                <a class="nav-link btn-hover-nav" mdbWavesEffect routerLink="/products-categorie">
+                    <span>Categoria</span></a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']">
+                <a class="nav-link btn-hover-nav " mdbWavesEffect routerLink="/products-categorie">
+                    <span>Categoria</span></a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']">
+                <a class="nav-link btn-hover-nav" mdbWavesEffect routerLink="/products-categorie">
+                    <span>Categoria</span></a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']">
+                <a class="nav-link btn-hover-nav" mdbWavesEffect routerLink="/products-categorie">
+                    <span>Categoria</span></a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item" [routerLinkActive]="['active']">
+              <a class="nav-link btn-hover-nav" mdbWavesEffect routerLink="/cart">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
+        </ul>
+
+    </links>
+
+</mdb-navbar>
+
+<mdb-navbar id="second" SideClass=" navbar-expand-lg navbar-dark bg-black01" [containerInside]="false">
+    <div class="d-flex justify-content-center align-items-center pt-2">
+        <p class="txt-white font-200 text-center">Envios gratis a todo el país en compras mayores a $10.000</p>
+    </div>
+</mdb-navbar>

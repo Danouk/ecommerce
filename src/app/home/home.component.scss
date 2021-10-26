@@ -1,0 +1,95 @@
+@import '../../styles.scss';
+
+.home{
+    height: 75vh;
+    background-color: $bg-black00;
+}
+
+.back{
+    // background-image: url('../../assets/img/backhome.png');
+}
+
+.ff{
+    font-family: cherysh;
+}
+
+.p-home{
+    white-space: pre;
+    width: 40%;
+    position: absolute;
+    left: 22%;
+    top: 30%;
+    font-size: 68px;
+    line-height: 68px;
+    font-weight: 700;
+
+    p{
+        text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.45);
+    }
+
+    // white-space: pre; CELULAR
+    // width: 40%;
+    // position: absolute;
+    // left: 15%;
+    // top: 390%;
+    // font-size: 38px;
+    // line-height: 43px;
+    // font-weight: 700;
+}
+
+.p-home-back{
+    position: absolute;
+    color: $bg-huevo;
+    top: 8%;
+    left: 46%;
+    font-size: 195px;
+
+    // position: fixed; CELULAR
+    // color: #FFDF90;
+    // top: 29%;
+    // left: 42%;
+    // font-size: 110px;
+}
+p{
+    // text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.45);
+}
+
+.sp{
+    color: $bg-huevo;
+}
+
+.input-container{
+    background-color: $bg-black02;
+    width: 480px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.45);
+}
+
+input{
+    background-color: transparent;
+    border: transparent;
+
+}
+
+::-webkit-input-placeholder { color:$bg-grey00 }
+
+
+.input-btn{
+    background-color: $bg-grey00;
+    width: 53px;
+    height: 45px;
+    border-radius: 44px;
+}
+
+button{
+    border: none;
+}
+
+.input-btn :hover{
+    background-color: $bg-huevo;
+    width: 53px;
+    height: 45px;
+    border-radius: 44px;
+
+}

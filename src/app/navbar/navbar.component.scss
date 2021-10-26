@@ -1,0 +1,14 @@
+
+@import '../../styles.scss';
+
+.font-200{
+    font-weight: 200;
+}
+
+.btn-hover-nav :hover {
+    color: $bg-huevo;
+}
+
+.btn-visited-nav :visited{
+    color: $bg-huevo;
+}

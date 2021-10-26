@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: cherysh;
+    src: url(assets/Cherish/Cherish-Regular.ttf) format("truetype");
+  }
+
+$bg-black00: #2b2b2b;
+$bg-black01: #3d3d3d;
+$bg-black02: #808080;
+$bg-huevo: #FFDF90; 
+$bg-salmon: #FF6251;
+$bg-grey00: #bdbdbd;
+
+
+
+.bg-black00{
+    background-color: $bg-black00;
+}
+
+.bg-black01{
+    background-color: $bg-black01;
+}
+
+.bg-black02{
+    background-color: $bg-black02;
+}
+
+.bg-huevo{
+    background-color: $bg-huevo;
+}
+
+.bg-salmon{
+    background-color: $bg-salmon;
+}
+
+.bg-grey00{
+    background-color: $bg-grey00;
+}
+
+.txt-white{
+    color: #FFFFFF;
+}
+
+.vl {
+    border-left: 1px solid $bg-grey00;
+    height: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
