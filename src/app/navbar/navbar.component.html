@@ -4,22 +4,10 @@
 
 
     <links>
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto" *ngFor="let categorie of nameCategories">
             <li class="nav-item" [routerLinkActive]="['active']">
                 <a class="nav-link btn-hover-nav" mdbWavesEffect routerLink="/products-categorie">
-                    <span>Categoria</span></a>
-            </li>
-            <li class="nav-item" [routerLinkActive]="['active']">
-                <a class="nav-link btn-hover-nav " mdbWavesEffect routerLink="/products-categorie">
-                    <span>Categoria</span></a>
-            </li>
-            <li class="nav-item" [routerLinkActive]="['active']">
-                <a class="nav-link btn-hover-nav" mdbWavesEffect routerLink="/products-categorie">
-                    <span>Categoria</span></a>
-            </li>
-            <li class="nav-item" [routerLinkActive]="['active']">
-                <a class="nav-link btn-hover-nav" mdbWavesEffect routerLink="/products-categorie">
-                    <span>Categoria</span></a>
+                    <span>{{categorie}}</span></a>
             </li>
         </ul>
 

@@ -79,3 +79,29 @@ button{
     top: 30px;
     right: 200px;
 }
+
+@media screen and (max-width: 480px){
+    .sp{
+        font-size: 2rem;
+        line-height: 32px;
+    }
+    
+    .txt-newsletter{
+        font-size: 2rem;
+    }
+
+    .suscribe{
+        font-size: 5rem;
+        position: unset;
+    }
+
+    .input-container{
+        width: 250px;
+        position: unset;
+    }
+
+    .section-newsletter{
+        height: auto;
+    
+    }
+}

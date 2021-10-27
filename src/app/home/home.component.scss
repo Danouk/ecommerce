@@ -19,7 +19,7 @@
     position: absolute;
     left: 22%;
     top: 30%;
-    font-size: 68px;
+    font-size: 4rem;
     line-height: 68px;
     font-weight: 700;
 
@@ -42,7 +42,7 @@
     color: $bg-huevo;
     top: 8%;
     left: 46%;
-    font-size: 195px;
+    font-size: 12rem;
 
     // position: fixed; CELULAR
     // color: #FFDF90;
@@ -52,6 +52,13 @@
 }
 p{
     // text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.45);
+}
+
+.img-home{
+    img{
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .sp{
@@ -64,6 +71,26 @@ p{
     height: 50px;
     border-radius: 50px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.45);
+}
+
+@media screen and (max-width: 480px){
+    .input-container{
+        width: 250px;
+    }
+
+    .p-home{
+        font-size: 2rem;
+        line-height: 37px;
+        position: unset ;
+        margin-top: -25%;
+        margin-bottom: 15%;
+    }
+    .p-home-back{
+        font-size: 5rem;
+        position: unset;
+        margin-left: 46%;
+        margin-top: 9%;
+    }
 }
 
 input{
@@ -92,4 +119,69 @@ button{
     height: 45px;
     border-radius: 44px;
 
+}
+
+.section-card-categories{
+    height: auto;
+    background-color: $bg-black00;
+
+}
+
+.title-section{
+    font-size: 3rem;
+    line-height: 68px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.45);
+    margin-top: 5%;
+    
+}
+
+.section-card{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.cardl{
+    // background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    // box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.45);
+
+    h1{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $bg-huevo;
+    }
+
+}
+
+.imgcard{
+    img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .section-card{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .cardl{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+
+    }
+
+    .section-card-categories{
+        height: auto;
+    
+    }
 }

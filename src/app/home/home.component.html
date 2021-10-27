@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 <div class="home container-fluid">
     <div class="row">
-        <div class="col-6">
+        <div class="col-md-6">
             <div class="text-white">
                 <div>                
                     <p class="ff p-home-back">ipsum</p>
@@ -25,12 +25,36 @@
                 </div>
             </div>
         </div>
-        <div class="col-6 text-white back">
-            <img src="../../../assets/img/back-h.png" alt="" style="height: 734px;">
+        <div class="col-md-6 text-white back img-home">
+            <img src="../../../assets/img/back-h.png" alt="">
         </div>
     </div>
 
 </div>
 <app-banners-terms> </app-banners-terms>
+
+<div class="section-card-categories">
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-md-12 title-section pt-4">
+                <p>Lorem Ipsum is simply dummy <span class="sp">text of the</span></p>
+            </div>
+        </div>
+
+        <div class="row section-card p-lg-5">
+            <div class="cardl  p-lg-4 pb-4" *ngFor="let categorie of nameCategories">
+                <div class="imgcard">
+                    <img src="../../assets/img/back-h.png" alt="" srcset="">
+                </div>
+                <div class="pt-3">
+                   <h1>{{categorie}}</h1>
+                    <a href="http://">Ver más <i class="fas fa-angle-double-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 <app-newsletter></app-newsletter>
 <app-footer></app-footer>

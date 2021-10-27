@@ -8,3 +8,8 @@
 p, b{
     color: $bg-grey00;
 }
+
+@media screen and (max-width: 480px){
+.back{
+flex-wrap: wrap;
+}}

@@ -4,3 +4,75 @@
     height: 20vh;
     background-color: $bg-black01;
 }
+
+.container-footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.info{
+    line-height: 8px;
+    color: white;
+}
+
+.nuestraapp{
+    color: white;
+
+    p:nth-child(1){
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 8px;
+        // position: absolute;
+    }
+
+    // p:nth-child(1){
+    //     font-size: 4rem;
+    //     font-family: cherysh;
+    //     color: $bg-huevo;
+    //     position: absolute;
+    //     left: 13%;
+    //     bottom: -146.5%;
+    // }
+}
+
+.descarga-app{
+    // position: absolute;
+    // bottom: -144%;
+    color: white;
+
+    a{
+        // text-decoration: none;
+        // font-weight: 700;
+    }
+}
+
+.copy{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+    line-height: 8px;
+
+}
+
+.copy-name{
+    color: $bg-huevo;
+}
+
+.copy-icons-social{
+    color: $bg-huevo;
+}
+
+@media screen and (max-width: 480px){
+    .footer{
+        height: auto;
+    }
+
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    margin: 7%
+
+}
+}

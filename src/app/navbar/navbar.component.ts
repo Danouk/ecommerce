@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ApiService } from '../api.service';
 
 
 @Component({
@@ -9,11 +10,23 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
+  nameCategories : any = []
+
   constructor(
     private router : Router,
+    private api: ApiService
     ) { }
 
   ngOnInit(): void {
+    this.getNameCategories()
+
+  }
+
+  getNameCategories() {
+    this.api.apiGetNameCategories().subscribe((data) => {
+      this.nameCategories = data
+      console.log('name', this.nameCategories)
+    }) 
   }
 
 }
