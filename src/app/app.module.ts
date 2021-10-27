@@ -14,6 +14,8 @@ import { BannersTermsComponent } from './banners-terms/banners-terms.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WebStorageModule } from 'ngx-store';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms'; 
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,10 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     BrowserAnimationsModule,
     WebStorageModule.forRoot(),
     MDBBootstrapModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

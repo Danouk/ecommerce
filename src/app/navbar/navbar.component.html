@@ -1,13 +1,14 @@
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark bg-black00" [containerInside]="false">
 
-    <mdb-navbar-brand><a class="navbar-brand" href="#"><b>LOGO</b></a></mdb-navbar-brand>
+    <mdb-navbar-brand><a class="navbar-brand" href="/home"><b>LOGO</b></a></mdb-navbar-brand>
 
 
     <links>
         <ul class="navbar-nav mr-auto" *ngFor="let categorie of nameCategories">
             <li class="nav-item" [routerLinkActive]="['active']">
-                <a class="nav-link btn-hover-nav" mdbWavesEffect routerLink="/products-categorie">
-                    <span>{{categorie}}</span></a>
+                <a class="nav-link btn-hover-nav" mdbWavesEffect routerLink="/products-categorie/{{categorie}}">
+                    <span>{{categorie}}</span>
+                </a>
             </li>
         </ul>
 
@@ -15,6 +16,8 @@
             <li class="nav-item" [routerLinkActive]="['active']">
               <a class="nav-link btn-hover-nav" mdbWavesEffect routerLink="/cart">
                 <i class="fas fa-shopping-cart"></i>
+                <span class="badge">{{this.cart}}</span>
+
               </a>
             </li>
         </ul>

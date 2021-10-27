@@ -1,1 +1,32 @@
-<p>products-categorie works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h1>{{this.urlpath}}</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+            filtro
+            <div class="vl">
+                <!-- line -->
+            </div> 
+        </div>
+
+        <div class="col-9">
+            <!-- card -->
+            <div class="row">
+            <div *ngFor="let product of products" class="col-4">
+                <div class="card">
+                    <p>{{product.id}} - {{product.title}}</p>
+                    <a routerLink="/product/{{product.id}}">view product</a>
+                    <button (click)="addCart(product)">add cart</button>
+
+                </div>
+        
+            </div>
+        </div>
+        </div>
+    </div>
+
+</div>

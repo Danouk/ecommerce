@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
+<!-- <app-navbar></app-navbar> -->
 <div class="home container-fluid">
     <div class="row">
         <div class="col-md-6">
@@ -13,13 +13,17 @@
                         simply dummy <br>
                           <span class="sp"> text of the</span>
                     </p>
+                    <form [formGroup]="formName" (ngSubmit)="enviar()">
                     <div class="text-white d-flex d-flex align-items-center input-container" >
-                        <input type="text" class="form-control" placeholder=" 👋    Hola! Dejanos tu nombre" >
+
+                        <input type="text" formControlName="user"
+                        class="form-control" id="user" placeholder=" 👋    Hola! Dejanos tu nombre" >
                         
-                        <button class="d-flex justify-content-center align-items-center m-1 input-btn">
+                        <button class="d-flex justify-content-center align-items-center m-1 input-btn" >
                             <img src="../../assets/svg/arrow-grey.svg" alt="" style="width:27px; display:block">
                         </button>
                     </div>
+                </form>
                     
 
                 </div>
@@ -43,12 +47,14 @@
 
         <div class="row section-card p-lg-5">
             <div class="cardl  p-lg-4 pb-4" *ngFor="let categorie of nameCategories">
-                <div class="imgcard">
-                    <img src="../../assets/img/back-h.png" alt="" srcset="">
-                </div>
-                <div class="pt-3">
-                   <h1>{{categorie}}</h1>
-                    <a href="http://">Ver más <i class="fas fa-angle-double-right"></i></a>
+                <div>
+                    <div class="imgcard">
+                        <img src="../../assets/img/back-h.png" alt="" srcset="">
+                    </div>
+                    <div class="pt-3">
+                    <h1>{{categorie}}</h1>
+                        <a routerLink="/products-categorie/{{categorie}}">Ver más <i class="fas fa-angle-double-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -56,5 +62,5 @@
     </div>
 </div>
 
-<app-newsletter></app-newsletter>
-<app-footer></app-footer>
+<!-- <app-newsletter></app-newsletter> -->
+<!-- <app-footer></app-footer> -->

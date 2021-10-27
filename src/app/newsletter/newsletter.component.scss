@@ -1,7 +1,7 @@
 @import '../../styles.scss';
 
 .section-newsletter{
-    height: 40vh;
+    height: auto;
     background-color: $bg-black00;
     background-image: url('../../assets/svg/arrow-back.svg');
     background-position-x: 36%;
@@ -75,7 +75,7 @@ button{
     font-family: cherysh;
     position: absolute;
     color: $bg-huevo;
-    font-size: 195px;
+    font-size: 12rem;
     top: 30px;
     right: 200px;
 }
@@ -104,4 +104,17 @@ button{
         height: auto;
     
     }
+}
+
+@media screen and (max-width: 1280px){
+    .suscribe{
+        top: -19px;
+        right: 200px;
+        font-size: 9rem;
+    }
+    .input-container{
+        top: 116px;
+        right: 38px;
+    }
+    
 }
