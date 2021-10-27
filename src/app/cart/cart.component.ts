@@ -55,5 +55,10 @@ export class CartComponent implements OnInit {
     })
   })
 }
+  clearLocalStorageCart(){
+    localStorage.removeItem('productCart')
+    this.api.sendData(0)
+    
+  }
 
 }
