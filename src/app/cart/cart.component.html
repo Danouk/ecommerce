@@ -1,2 +1,31 @@
-<p>{{this.user}}</p>
-<button (click)="clearLocalStorageCart()">borrar carrito</button>
+<div class="container cart">
+    <div class="text-white my-5" *ngIf="!this.tiene">
+        <h1 class="shad-txt">🐣  Ups! </h1>
+        <p>Todavía no cargaste ningun producto a tu carrito  </p>
+    </div>
+    <!-- <div class="hl"></div> -->
+    <div *ngIf="this.tiene">
+        <div class="text-white my-5">
+            <h1 class="shad-txt">👋  Hola! {{this.user}}</h1>
+            <p>Veamos tus productos agregados!!!</p>
+        </div>
+        <div *ngFor="let prod of product">
+            <!-- {{prod.title}}{{prod.price}} -->
+
+            <div class="cardProduct col-md-12 my-2">
+                <div class="mx-2">
+                    <img  src="{{prod.image}}" alt="Card image cap" width="40px">
+                </div>
+                <div class="my-3">
+                    <p>{{prod.title}}</p>
+                    <p>$ {{prod.price}} .-</p>
+                </div>
+            </div>
+
+        </div>
+        <p class="text-white">Total $ {{this.totalCart}}.-</p>
+        <button class="btn-huevo" (click)="clearLocalStorageCart()">borrar carrito</button>
+    </div>
+
+    
+</div>

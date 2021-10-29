@@ -74,3 +74,25 @@ body{
   .toast-warning {
     background-color: #F89406 !important;
   }
+
+.btn-huevo{
+  background-color: $bg-huevo;
+  color: $bg-black00;
+  border: none;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.45);
+}
+
+.btn-huevo:hover{
+  background-color: $bg-black02;
+  color: $bg-huevo;
+}
+
+.alink{
+  color: $bg-huevo;
+}
+
+.alink:hover{
+  color: $bg-grey00;
+  text-decoration: none;
+}
+

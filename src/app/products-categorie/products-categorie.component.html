@@ -1,26 +1,36 @@
-<div class="container-fluid">
+<div class="container">
     <div class="row">
-        <div class="col-12">
-            <h1>{{this.urlpath}}</h1>
+        <div class="col-12  text-white">
+            <!-- <h1>{{this.urlpath}}</h1> -->
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-3">
-            filtro
-            <div class="vl">
-                <!-- line -->
-            </div> 
+    <div class="row my-5">
+        <div class="col-md-3">
+            <!-- <div> -->
+                <strong class="cat">>>  {{this.urlpath}}</strong>
+                <p class="text-white">filtros</p>
+
+                <!-- <div class="vl-xl">
+                </div> -->
+            <!-- </div> -->
+ 
         </div>
 
-        <div class="col-9">
+        <div class="col-md-9">
             <!-- card -->
             <div class="row">
-            <div *ngFor="let product of products" class="col-4">
-                <div class="card">
-                    <p>{{product.id}} - {{product.title}}</p>
-                    <a routerLink="/product/{{product.id}}">view product</a>
-                    <button (click)="addCart(product)">add cart</button>
+            <div *ngFor="let product of products" class="col-md-4">
+                <div class="mb-4">
+                    <div class="cardProductImg m-2 py-4">
+                        <img src="{{product.image}}" alt="" srcset="" height="100px">
+                    </div>
+                    <p class="card-p m-2">{{product.id}} - {{product.title}}</p>
+                    <div class="card-btn m-2">
+                        <a class="alink" routerLink="/product/{{product.id}}">view product</a>
+                        <button class="btn-huevo" (click)="addCart(product)">add cart</button>
+                    </div>
+
 
                 </div>
         

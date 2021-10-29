@@ -181,6 +181,9 @@ button{
 }
 
 @media screen and (max-width: 480px){
+    .home{
+        height: auto;
+    }
     .section-card{
         display: flex;
         flex-direction: column;
@@ -197,6 +200,11 @@ button{
 
     .section-card-categories{
         height: auto;
-    
+    }
+
+    .title-section{
+        font-size: 2rem;
+        line-height: 30px;
+
     }
 }

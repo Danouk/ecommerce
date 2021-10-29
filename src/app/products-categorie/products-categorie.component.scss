@@ -1,3 +1,38 @@
+@import '../../styles.scss';
+
 h1{
     text-align: center;
 }
+
+.cardProductImg{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.card-p{
+    color: white;
+}
+
+.card-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+button{
+    width: 50%;
+    // background-color: $bg-huevo;
+}
+
+.vl-xl {
+    border-left: 1px solid $bg-grey00;
+    height: 80%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .cat{
+      color: $bg-huevo;
+  }

@@ -11,7 +11,9 @@ export class CartComponent implements OnInit {
   public url: string = this.router.url;
   user: any
   products: any
-  product: any
+  product: any = []
+  totalCart: number = 0
+  tiene= false
 
   constructor(
     private router : Router,
@@ -23,20 +25,23 @@ export class CartComponent implements OnInit {
 
     console.log('url', this.url)
     this.saveLocalstorage()
+
+    this.getStorage();
   }
 
   saveLocalstorage(){
     localStorage.setItem('url', this.url.split('/')[1]);
 
-    this.getStorage();
   }
 
   getStorage(){
+    console.log('get',localStorage.getItem('productCart'))
     if(localStorage.getItem('productCart')){
       console.log('items local', localStorage.getItem('productCart'))
       let guardado = localStorage.getItem('productCart');
       this.products = guardado.split(',')
       console.log('cant',this.products.length)
+      this.tiene = true
       this.getProducts(this.products)
     }
 
@@ -48,9 +53,11 @@ export class CartComponent implements OnInit {
   }
 
   getProducts(products){
-    this.products.map(product => {
+    products.map(product => {
     this.api.apiGetProductId(product).subscribe(res => {
-      this.product = res
+      this.product.push(res)
+      this.totalCart = this.totalCart +res['price']
+      console.log('total', this.totalCart)
       console.log('product', this.product, res)
     })
   })
@@ -58,6 +65,9 @@ export class CartComponent implements OnInit {
   clearLocalStorageCart(){
     localStorage.removeItem('productCart')
     this.api.sendData(0)
+    this.tiene = false
+
+    // this.ngOnInit()
     
   }
 

@@ -1,0 +1,12 @@
+@import '../../styles.scss';
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price{
+    color: $bg-huevo;
+    font-weight: 700;
+}

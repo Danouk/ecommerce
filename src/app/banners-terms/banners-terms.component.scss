@@ -5,6 +5,10 @@
     background-color: $bg-black01;
 }
 
+i{
+    color: $bg-grey00;
+}
+
 p, b{
     color: $bg-grey00;
 }
@@ -12,4 +16,6 @@ p, b{
 @media screen and (max-width: 480px){
 .back{
 flex-wrap: wrap;
-}}
+height: auto;
+}
+}

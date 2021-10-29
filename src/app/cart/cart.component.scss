@@ -1,0 +1,30 @@
+@import '../../styles.scss';
+
+
+.cardProduct{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+
+    p{
+        line-height: 18px;
+    }
+}
+
+.hl{
+    border-top: 2px solid $bg-huevo;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cart{
+    min-height: 50vh;
+}
+
+.shad-txt{
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.45);
+}

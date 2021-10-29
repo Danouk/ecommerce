@@ -1,8 +1,23 @@
 <p>product works!</p>
 
-<div>
-    <h1>{{product.title}}</h1>
-    <p>{{product.description}}</p>
-    <p>{{product.price}}</p>
-    <p>{{product.category}}</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="d-flex justify-content-center p-2 m-1" style="background-color:white;">
+                <img src="{{product.image}}" alt="{{product.title}}" width="80%">
+            </div>
+        </div>
+        <div class="col-md-6 text-white description">
+            <!-- <div> -->
+                <div>
+                    <h2>{{product.title}}</h2>
+                    <p>{{product.description}}</p>
+                    <p class="price">$ {{product.price}} .-</p>
+                </div>
+                <div>
+                    <button class="btn-huevo" style="width: 100%;" (click)="addCart(product)">Add to cart</button>
+                </div>
+            <!-- </div> -->
+        </div>
+    </div>
 </div>

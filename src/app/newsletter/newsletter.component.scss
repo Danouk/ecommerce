@@ -80,6 +80,19 @@ button{
     right: 200px;
 }
 
+@media screen and (max-width: 1280px){
+    .suscribe{
+        top: -19px;
+        right: 200px;
+        font-size: 9rem;
+    }
+    .input-container{
+        top: 116px;
+        right: 38px;
+    }
+    
+}
+
 @media screen and (max-width: 480px){
     .sp{
         font-size: 2rem;
@@ -106,15 +119,3 @@ button{
     }
 }
 
-@media screen and (max-width: 1280px){
-    .suscribe{
-        top: -19px;
-        right: 200px;
-        font-size: 9rem;
-    }
-    .input-container{
-        top: 116px;
-        right: 38px;
-    }
-    
-}
