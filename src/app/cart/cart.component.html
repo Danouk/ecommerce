@@ -16,15 +16,19 @@
                 <div class="mx-2">
                     <img  src="{{prod.image}}" alt="Card image cap" width="40px">
                 </div>
+                <div class="vl"></div>
                 <div class="my-3">
                     <p>{{prod.title}}</p>
-                    <p>$ {{prod.price}} .-</p>
+                    <strong>$ {{prod.price}} .-</strong>
                 </div>
             </div>
 
         </div>
-        <p class="text-white">Total $ {{this.totalCart}}.-</p>
-        <button class="btn-huevo" (click)="clearLocalStorageCart()">borrar carrito</button>
+        <div>
+            <p class="text-white">Total $ <strong>{{this.totalCart}}</strong>.-</p>
+            <button class="btn-huevo" (click)="clearLocalStorageCart()">Borrar carrito</button>
+        </div>
+
     </div>
 
     

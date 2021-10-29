@@ -25,10 +25,10 @@
                     <div class="cardProductImg m-2 py-4">
                         <img src="{{product.image}}" alt="" srcset="" height="100px">
                     </div>
-                    <p class="card-p m-2">{{product.id}} - {{product.title}}</p>
+                    <p class="card-p m-2">{{product.title}}</p>
                     <div class="card-btn m-2">
-                        <a class="alink" routerLink="/product/{{product.id}}">view product</a>
-                        <button class="btn-huevo" (click)="addCart(product)">add cart</button>
+                        <a class="alink" routerLink="/product/{{product.id}}"><i class="fas fa-angle-double-right"></i> Ver </a>
+                        <button class="btn-huevo " (click)="addCart(product)">Agregar al carrito </button>
                     </div>
 
 
